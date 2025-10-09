@@ -655,6 +655,7 @@ Transform:
   - {fileID: 38797030}
   - {fileID: 1403977708}
   - {fileID: 318402500}
+  - {fileID: 688255300}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &113898859
@@ -1816,37 +1817,24 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
---- !u!1 &410153016
+--- !u!1 &419869761 stripped
 GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bc8c42aec61c33546a040045965d47dd, type: 3}
+  m_PrefabInstance: {fileID: 723736783}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &419869762
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 410153017}
-  m_Layer: 0
-  m_Name: SwordTip
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &410153017
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410153016}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.941, y: 1.111, z: 0.394}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1961254953}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 419869761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 529ac2b0a3d7f6148b37310b64808991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ad: {fileID: 1961254958}
 --- !u!4 &438906167 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d7ebc4beef65209438cb2651fb3a7e5d, type: 3}
@@ -2038,6 +2026,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620637471}
   m_CullTransparentMesh: 1
+--- !u!1 &688255299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 688255300}
+  m_Layer: 0
+  m_Name: floor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &688255300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688255299}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 74033441}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &721581479
 GameObject:
   m_ObjectHideFlags: 0
@@ -2204,11 +2223,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bc8c42aec61c33546a040045965d47dd, type: 3}
       propertyPath: m_Name
-      value: Paladin WProp J Nordstrom
+      value: Model
       objectReference: {fileID: 0}
     - target: {fileID: 1051571768989249988, guid: bc8c42aec61c33546a040045965d47dd, type: 3}
       propertyPath: m_Name
       value: Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 1051571768989249988, guid: bc8c42aec61c33546a040045965d47dd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2042953256698253358, guid: bc8c42aec61c33546a040045965d47dd, type: 3}
       propertyPath: m_LocalScale.x
@@ -2228,10 +2251,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2042953256698253358, guid: bc8c42aec61c33546a040045965d47dd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.355
+      value: 0.491
       objectReference: {fileID: 0}
     - target: {fileID: 2042953256698253358, guid: bc8c42aec61c33546a040045965d47dd, type: 3}
       propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3099756089343826349, guid: bc8c42aec61c33546a040045965d47dd, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: bc8c42aec61c33546a040045965d47dd, type: 3}
@@ -2244,20 +2271,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 2042953256698253358, guid: bc8c42aec61c33546a040045965d47dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 410153017}
-    - targetCorrespondingSourceObject: {fileID: 2042953256698253358, guid: bc8c42aec61c33546a040045965d47dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2070917365}
+    m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bc8c42aec61c33546a040045965d47dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 419869762}
     - targetCorrespondingSourceObject: {fileID: 1051571768989249988, guid: bc8c42aec61c33546a040045965d47dd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1961254956}
     - targetCorrespondingSourceObject: {fileID: 1051571768989249988, guid: bc8c42aec61c33546a040045965d47dd, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1961254955}
+      addedObject: {fileID: 1961254958}
   m_SourcePrefab: {fileID: 100100000, guid: bc8c42aec61c33546a040045965d47dd, type: 3}
 --- !u!1 &832575517
 GameObject:
@@ -2626,8 +2650,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73ad503cf1b1d434ba424fee92593658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basePlayer: {fileID: 0}
-  baseWeapon: {fileID: 0}
+  basePlayer: {fileID: 11400000, guid: 22b258bf3cc520b4588aedc917ec104d, type: 2}
+  baseWeapon: {fileID: 11400000, guid: 2b5206dadb406c24f92ffa1a9b3f7d4a, type: 2}
   currentHealth: 0
   currentStamina: 0
 --- !u!1 &1000991180
@@ -4814,7 +4838,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1843559630
 Transform:
   m_ObjectHideFlags: 0
@@ -4843,13 +4867,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   terrainPrefabs:
-  - {fileID: 268118961561806861, guid: 66072c42e7f38924f90a2ea3e36cc606, type: 3}
-  - {fileID: 2357419356555822539, guid: cf22a2db10f09a34495e9f83913738c8, type: 3}
-  - {fileID: 138836365270009319, guid: 7baba197ce36c92439b423eabaad3737, type: 3}
-  - {fileID: 8082612214144964267, guid: d5b8de414112a004a82d0437b5f7a780, type: 3}
-  gridWidth: 5
-  gridHeight: 5
-  tileSize: 20
+  - {fileID: 2465558204961391594, guid: fb6906b1c2f35ef4ea3e72386891fa6d, type: 3}
+  - {fileID: 6223992774509759224, guid: ac8d3b7a8a502784a89c3a5267b2980c, type: 3}
+  - {fileID: 4482946180143716550, guid: a1e585f671dc6d3409e9d406cbaa909d, type: 3}
+  - {fileID: 7944741365386133005, guid: fa029c3c18878334895305e9b983b0ce, type: 3}
+  - {fileID: 7565470960100870290, guid: b90ecb51603d4504d90b4ff68dcfd797, type: 3}
+  - {fileID: 8195590998567634832, guid: f7a102a011f119347b1c9da5a0f99de5, type: 3}
+  - {fileID: 8640640156553673445, guid: bf80403294db22a4fb0bff5173aa0237, type: 3}
+  - {fileID: 1641407363864041182, guid: f53fc68a7f80a474e951750cdd0f4dd8, type: 3}
+  - {fileID: 1641407363864041182, guid: f53fc68a7f80a474e951750cdd0f4dd8, type: 3}
+  - {fileID: 3991052844307826703, guid: 5082758f264ae684c995a29d607a4544, type: 3}
+  - {fileID: 2505945004055207556, guid: da573a6e1271f104588e69f9874af2e5, type: 3}
+  - {fileID: 4830428558600354985, guid: dd7c115e8b854b143969a56c827e0ffd, type: 3}
+  - {fileID: 3675276699159304883, guid: d39f4c4ba82b1f64883937195fbd00bd, type: 3}
+  - {fileID: 7291140933045088949, guid: 58b15257fd8ec2e44800afb8a4292e84, type: 3}
+  - {fileID: 2677685301289469738, guid: 983032862417fad4d8d24390deaa3e43, type: 3}
+  - {fileID: 2500761594848502476, guid: f6992d7c0e69a1c4b81e0df4a2179dfb, type: 3}
+  - {fileID: 5750367968992305642, guid: 86a529b380614c345baada08fbe25225, type: 3}
+  gridWidthNumber: 10
+  gridHeightNumber: 10
+  tileSize: 4
   randomGenerate: 1
 --- !u!1 &1940671324
 GameObject:
@@ -4931,26 +4968,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1051571768989249988, guid: bc8c42aec61c33546a040045965d47dd, type: 3}
   m_PrefabInstance: {fileID: 723736783}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1961254953 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2042953256698253358, guid: bc8c42aec61c33546a040045965d47dd, type: 3}
-  m_PrefabInstance: {fileID: 723736783}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1961254955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1961254952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7e7b57dcdc461e468b5f8197b42cc90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  swordTip: {fileID: 410153017}
-  swordBase: {fileID: 2070917365}
-  minSpeed: 0
 --- !u!65 &1961254956
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4970,8 +4987,21 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.30037224, y: 0.0919596, z: 1.014206}
+  m_Size: {x: 0.33, y: 0.15, z: 1.1}
   m_Center: {x: 0.7962849, y: 1.1532254, z: -0.10952185}
+--- !u!114 &1961254958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961254952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f6abb7b07ccab4db947063e6593662, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  col: {fileID: 1961254956}
 --- !u!1001 &2006643968
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5037,37 +5067,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7ebc4beef65209438cb2651fb3a7e5d, type: 3}
---- !u!1 &2070917364
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2070917365}
-  m_Layer: 0
-  m_Name: SwordBase
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2070917365
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2070917364}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.755, y: 1.129, z: -0.304}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1961254953}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2113663272
 GameObject:
   m_ObjectHideFlags: 0

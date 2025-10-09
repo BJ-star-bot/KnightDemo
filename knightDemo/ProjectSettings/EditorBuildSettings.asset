@@ -12,5 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/BattleField.unity
     guid: 6367b29f8c24caa4b9e6305ac70e5a0c
   m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: aa910e8aa2ce6a444a76cb09ccea19f9, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

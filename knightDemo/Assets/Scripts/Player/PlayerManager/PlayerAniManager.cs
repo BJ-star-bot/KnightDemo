@@ -1,3 +1,4 @@
+using System.Collections;
 using TestGame.Movement;
 using UnityEngine;
 
@@ -13,15 +14,21 @@ public class PlayerAniManager : MonoBehaviour
     }
     void LateUpdate()
     {
-
+        ani.SetBool("Idle", false);
         ani.SetBool("Walk", false);
         ani.SetBool("Jump", false);
         ani.SetBool("Run", false);
         ani.SetBool("Attacked", false);
+        ani.SetBool("Block", false);
         AniInformation AniInf = player.current_state.GetAniInf();//自定义的结构，见NameSpace.cs
         switch (AniInf.AniName)//DefaultLayer
         {
-            case "Idle": break;
+            case "Idle":
+                {
+                    ani.SetBool("Idle", true);
+                    break;
+                }
+                
             case "Walk":
                 {
                     ani.SetBool("Walk", true);
@@ -67,6 +74,7 @@ public class PlayerAniManager : MonoBehaviour
                     break;
                 }
         }
+        if(AttackAsi.IsName("Default"))//只能在default时做动作
         switch (AniInf.AttackLayer)//AttackLayer,控制角色上半身
         {
             case "StandAttack":
@@ -84,8 +92,13 @@ public class PlayerAniManager : MonoBehaviour
                 {
                     ani.SetTrigger("JumpAttack");
                     break;
-                    
-            }
+                }
+            case "Block":
+                {
+                    ani.SetBool("Block", true);
+                    break;
+                }
+
         }
     }
 }

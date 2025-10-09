@@ -42,6 +42,9 @@ public class IdleState : IState
     }
     public AniInformation GetAniInf()
     {
-        return new AniInformation(Movement);
+        if (Input.GetMouseButton(1))
+            return new AniInformation("Idle", "Block");
+        else
+            return new AniInformation(Movement);
 }
 }

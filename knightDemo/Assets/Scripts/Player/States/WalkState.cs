@@ -49,8 +49,12 @@ public class WalkState : IState
 
     public void exit() { }
 
-        public AniInformation GetAniInf()
+    public AniInformation GetAniInf()
     {
-        return new AniInformation("Walk");
+        if (Input.GetMouseButton(1))
+            return new AniInformation("Walk", "Block");//在walk时能进入防守
+        
+        else
+            return new AniInformation("Walk");
 }
 }
