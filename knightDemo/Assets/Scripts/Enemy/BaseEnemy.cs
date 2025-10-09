@@ -12,7 +12,7 @@ public class BaseEnemy : MonoBehaviour, IDamageable
     protected bool invincible = false;
     public void TakeDamage(DamageContext dct)
     {
-        if (invincible) return;
+        //if (invincible) return;
         health.TakeDamage(dct);
     }
 
@@ -59,7 +59,7 @@ public class BaseEnemy : MonoBehaviour, IDamageable
     }
     void Update()
     {
-        IfInvincible();
+        
     }
     void IfInvincible()
     {

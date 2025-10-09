@@ -30,8 +30,9 @@ public class Bullet : MonoBehaviour
         {
             var dct = new DamageContext
             {
-                basedamage = damage,
-                damage_source=Ownner
+                damage = damage,
+                penetration=0,
+                damage_source =Ownner
             };
 
             t.TakeDamage(dct);

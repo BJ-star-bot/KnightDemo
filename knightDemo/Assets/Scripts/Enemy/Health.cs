@@ -16,7 +16,7 @@ public class Health : MonoBehaviour
 
     {
         if (dct.damage_source == null) return;
-        blood -= dct.basedamage;
+        blood -= dct.damage;
 
         Debug.Log("demage from " + dct.damage_source.name);
         if (blood <= 0)

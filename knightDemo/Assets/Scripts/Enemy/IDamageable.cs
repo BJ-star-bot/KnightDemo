@@ -7,11 +7,13 @@ public interface IDamageable
 
 public struct DamageContext
 {
-    public DamageContext(float a=0, GameObject b = null)
+    public DamageContext(float d = 0, float p = 0,GameObject go = null)
     {
-        basedamage = a;
-        damage_source = b;
+        damage = d;
+        penetration = p;
+        damage_source = go;
     }
-    public float basedamage;
+    public float damage;
+    public float penetration;
     public GameObject damage_source;
 }

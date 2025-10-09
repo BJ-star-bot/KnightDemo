@@ -13,9 +13,9 @@ public class StateManager : MonoBehaviour
     public float turning_speed = 7f;
     public float ReactSpeed = 2f;
 
-    [HideInInspector]public IState current_state;
-    [HideInInspector]public bool jump_up;
-    [HideInInspector]public Vector3 direction;
+    [HideInInspector] public IState current_state;
+    [HideInInspector] public bool jump_up;
+    [HideInInspector] public Vector3 direction;
     void Start()
     {
         cc = GetComponent<CharacterController>();
@@ -26,12 +26,14 @@ public class StateManager : MonoBehaviour
     void Update()
     {
         current_state?.tick();
-        
+
     }
 
-    public void change_state(IState state_to_change) {
+    public void change_state(IState state_to_change)
+    {
         current_state?.exit();
         current_state = state_to_change;
         state_to_change.enter();
     }
+
 }
