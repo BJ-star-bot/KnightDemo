@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: DungeonFloor
+  m_EditorClassIdentifier: 
+  m_GroupName: DungeonFloor
+  m_GUID: 953c77792b882f54d8ad0d356061f901
+  m_SerializeEntries:
+  - m_GUID: 5082758f264ae684c995a29d607a4544
+    m_Address: Assets/Prefabs/Dungeon/Environment/Floor/NGF_Env_Floor_09.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Floor
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 58b15257fd8ec2e44800afb8a4292e84
+    m_Address: Assets/Prefabs/Dungeon/Environment/Floor/NGF_Env_Floor_13.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Floor
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 86a529b380614c345baada08fbe25225
+    m_Address: Assets/Prefabs/Dungeon/Environment/Floor/NGF_Env_Floor_16.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Floor
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 983032862417fad4d8d24390deaa3e43
+    m_Address: Assets/Prefabs/Dungeon/Environment/Floor/NGF_Env_Floor_14.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Floor
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a1e585f671dc6d3409e9d406cbaa909d
+    m_Address: Assets/Prefabs/Dungeon/Environment/Floor/NGF_Env_Floor_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Floor
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ac8d3b7a8a502784a89c3a5267b2980c
+    m_Address: Assets/Prefabs/Dungeon/Environment/Floor/NGF_Env_Floor_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Floor
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b90ecb51603d4504d90b4ff68dcfd797
+    m_Address: Assets/Prefabs/Dungeon/Environment/Floor/NGF_Env_Floor_05.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Floor
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bf80403294db22a4fb0bff5173aa0237
+    m_Address: Assets/Prefabs/Dungeon/Environment/Floor/NGF_Env_Floor_07.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Floor
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d39f4c4ba82b1f64883937195fbd00bd
+    m_Address: Assets/Prefabs/Dungeon/Environment/Floor/NGF_Env_Floor_12.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Floor
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da573a6e1271f104588e69f9874af2e5
+    m_Address: Assets/Prefabs/Dungeon/Environment/Floor/NGF_Env_Floor_10.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Floor
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dd7c115e8b854b143969a56c827e0ffd
+    m_Address: Assets/Prefabs/Dungeon/Environment/Floor/NGF_Env_Floor_11.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Floor
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f53fc68a7f80a474e951750cdd0f4dd8
+    m_Address: Assets/Prefabs/Dungeon/Environment/Floor/NGF_Env_Floor_08.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Floor
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6992d7c0e69a1c4b81e0df4a2179dfb
+    m_Address: Assets/Prefabs/Dungeon/Environment/Floor/NGF_Env_Floor_15.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Floor
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f7a102a011f119347b1c9da5a0f99de5
+    m_Address: Assets/Prefabs/Dungeon/Environment/Floor/NGF_Env_Floor_06.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Floor
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fa029c3c18878334895305e9b983b0ce
+    m_Address: Assets/Prefabs/Dungeon/Environment/Floor/NGF_Env_Floor_04.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Floor
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fb6906b1c2f35ef4ea3e72386891fa6d
+    m_Address: Assets/Prefabs/Dungeon/Environment/Floor/NGF_Env_Floor_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Floor
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: bdf4bebc257f3db4aa160f9314a8cbc1, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c15fa94dc8724c746a25d10d4ebd45fa, type: 2}
+    - {fileID: 11400000, guid: 951143dc7f1d35048bbd3e3488d621e1, type: 2}
